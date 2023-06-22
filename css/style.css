@@ -53,6 +53,40 @@ body {
     color: var(--main-bg-color)
 }
 
+/****** Header ******/
+header {
+    margin: auto;                                               /*Ajustement automatique de la hauteur du header*/      
+    display: flex;                                              /*disposition flexbox du logo et du menu nav*/
+    flex-direction: row;                                        /*orientation ligne des flexbox*/
+    justify-content: space-between;                             /* */
+    height: 79px;                                               /*hauteur du header */
+}
+
+#logo-booki {
+    width: 61.09px;                                             /* largeur du logo*/ 
+    height: 19px;                                               /* hauteur du logo*/
+    margin: 30px;                                               /* marge exterieure du logo*/
+
+}
+
+#nav-menu {
+    display:flex;
+    flex-direction: row;
+    font-size: 16px;
+}
+
+#nav-menu a {
+    margin: 0px 42.61px 0px 26.39px;
+    padding-top: 16px;
+    cursor: pointer;
+}
+
+#nav-menu a:hover {
+    border-top: 2px solid #0065FC;
+    padding-top: 14px;
+    color: #0065FC;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -158,5 +192,40 @@ body {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .main-container{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+    header {
+        height: auto;                                           /*Ajustement automatique de la hauteur du header*/
+        width: 100%;                                            /*largeur fixée à 100%*/
+        margin-bottom: 15%;                                     /*marge en bas pour espacer le header de la suite*/
+        display: flex;                                          /*disposition flexbox du logo et du menu nav*/
+        flex-direction: column;                                 /*orientation colonne des flexbox*/
+        justify-content: center;                                /* */
+        align-items: center;                                    /* */
+    }
+    
+    #nav-menu {
+        width: 100%;
+        display:flex;                                           /*disposition flexbox des liens du menu nav*/
+        flex-direction: row;                                    /*orientation ligne des flexbox*/
+    }
+    
+    #nav-menu a {
+        margin: 0;
+        width: 50%;                                             /*Chaque bouton occupera 50% de l'espace disponible*/
+        padding-bottom: 16px;
+        border-bottom: 2px solid #DADADA;                     /*bordure grise sur l'element non selectionné*/                                  
+    }
+    
+   
+    #nav-menu a:hover {
+        border-top : none;                                      /*suppression de la bordure bleue supérieure heritée du mode desktop*/
+        border-bottom: 2px solid #0065FC;                     /*Bordure bleue au passage du pointeur*/   
+        padding-bottom: 14px;                                   /* */
+    }
+    
 }
