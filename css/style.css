@@ -57,19 +57,22 @@ main {
 }
 
 /****** Title *******/
+h1,h2,h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
 h1 {
     font-size: 22px;
-    font-weight: bold;
 }
 
 h2 {
     font-size: 18px;
-    font-weight: bold;
 }
 
 h3 {
     font-size: 16px;
-    font-weight: bold;
 }
 
 /****** Header ******/
@@ -111,12 +114,17 @@ header {
 .search-and-filters{
     display: flex;
     flex-direction: column;
+    align-items: flex-start; 
     gap: 35px;
 }
 
-#main-title-container {               /*** positionnement a REPRENDRE ***/
-    height: 50px;
-    margin: 0;
+#main-title-container {
+    display: flex;
+    height: 53px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch; 
 }
 
 /** search by city**/
