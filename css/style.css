@@ -21,8 +21,11 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
     box-sizing: border-box;
+}
+
+main {
+    padding: 0 50px;
 }
 
 .section-title {
@@ -53,20 +56,36 @@ body {
     color: var(--main-bg-color)
 }
 
+/****** Title *******/
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
 /****** Header ******/
 header {
-    margin: auto;                                               /*Ajustement automatique de la hauteur du header*/      
-    display: flex;                                              /*disposition flexbox du logo et du menu nav*/
-    flex-direction: row;                                        /*orientation ligne des flexbox*/
-    justify-content: space-between;                             /* */
-    height: 79px;                                               /*hauteur du header */
+    display: flex;                                              
+    justify-content: space-between;
+    gap: 990px; 
+    align-items: flex-start;
+    align-self: stretch; 
+    height: 79px;
 }
 
 #logo-booki {
-    width: 61.09px;                                             /* largeur du logo*/ 
-    height: 19px;                                               /* hauteur du logo*/
-    margin: 30px;                                               /* marge exterieure du logo*/
-
+    width: 61.09px;
+    height: 19px;
+    padding: 30px;
 }
 
 #nav-menu {
@@ -82,11 +101,98 @@ header {
 }
 
 #nav-menu a:hover {
-    border-top: 2px solid #0065FC;
+    border-top: 2px solid var(--main-color);
     padding-top: 14px;
-    color: #0065FC;
+    color: var(--main-color);
 }
 
+/****** Search and Filters ******/
+.search-and-filters{
+    display:flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+#main-title-container {               /*** positionnement a REPRENDRE ***/
+    height: 50px;
+    margin: 0;
+}
+
+/** search by city**/
+.fa-location-dot {
+    position: relative;
+    left: 0px;
+    border-radius: 12px 0px 0px 12px;
+    color: black;
+    background-color: var(--main-bg-color);
+    width: 14px;
+    height: 18px;
+    padding : 15.5px 18px 15.5px 18px;
+}
+
+#search-container{
+    display: flex;
+    align-items: center;
+    height: 49px;
+    width: 377px;
+}
+
+#input-place{
+    height: 47px;                                                   /*hauteur 49 - 2*1 px de trait*/
+    width: 175px;                                                   /*largeur 195px- 20px de padding*/
+    color: black;
+    font-size: 16px;
+    font-weight: bold; 
+    border: none;                                                   /*suppresion des ombrages*/                                                       
+    border-top: 1px solid var(--main-bg-color);                     /*trait gris de bordure en haut*/
+    border-bottom: 1px solid var(--main-bg-color);                  /*trait gris de bordure en bas*/
+    padding: 0px 0px 0px 20px;                                      /*positionnement du debut de la saisie*/    
+}
+
+#desk-search{
+    position: relative;
+    right: 3px;
+    height: 49px;
+    width: 132px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 0px 12px 12px 0px;
+    cursor: pointer;
+}
+
+#mobile-search{
+    display: none;
+}
+
+/**Filters available*/ 
+#filters-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 758px;
+    height: 50px;
+    gap : 10px;
+}
+
+#filters-bar{
+    display: flex;
+    gap: 10px;
+}
+
+.filter-button{
+    height: 50px;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+    font-weight: bold; 
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    padding: 4px 19px 4px 19px;
+    transition: 0.3s;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -193,16 +299,14 @@ header {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     .main-container{
-        padding-left: 0px;
-        padding-right: 0px;
+        padding: 0;                                             /* enlève la marge */
     }
-
 
     header {
         height: auto;                                           /*Ajustement automatique de la hauteur du header*/
         width: 100%;                                            /*largeur fixée à 100%*/
-        margin-bottom: 15%;                                     /*marge en bas pour espacer le header de la suite*/
-        display: flex;                                          /*disposition flexbox du logo et du menu nav*/
+        margin-bottom: 15%;                                     /*marge en bas pour espacer le header A REMPLACER PAR le gap*/
+        display: flex;                                          /*Est ce une repétition inutile ?*/
         flex-direction: column;                                 /*orientation colonne des flexbox*/
         justify-content: center;                                /* */
         align-items: center;                                    /* */
@@ -212,20 +316,20 @@ header {
         width: 100%;
         display:flex;                                           /*disposition flexbox des liens du menu nav*/
         flex-direction: row;                                    /*orientation ligne des flexbox*/
+        text-align: center;                                     /*centre le texte du menu*/
     }
     
     #nav-menu a {
         margin: 0;
         width: 50%;                                             /*Chaque bouton occupera 50% de l'espace disponible*/
-        padding-bottom: 16px;
+        padding-bottom: 16px;                                   /**/
         border-bottom: 2px solid #DADADA;                     /*bordure grise sur l'element non selectionné*/                                  
     }
-    
-   
+       
     #nav-menu a:hover {
         border-top : none;                                      /*suppression de la bordure bleue supérieure heritée du mode desktop*/
-        border-bottom: 2px solid #0065FC;                     /*Bordure bleue au passage du pointeur*/   
-        padding-bottom: 14px;                                   /* */
+        border-bottom: 2px solid var(--main-color);             /*Bordure bleue au passage du pointeur*/   
+        padding-top: 16px;                                      /*compense le décallage lié a l'épaisseur du trait au sur le haut*/
+        padding-bottom: 14px;                                   /*compense le decallage lié a l'épaisseur du trait sur le bas*/
     }
-    
 }
