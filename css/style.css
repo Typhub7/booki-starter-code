@@ -78,8 +78,8 @@ header {
     justify-content: space-between;
     gap: 990px; 
     align-items: flex-start;
-    align-self: stretch; 
     height: 79px;
+    border-bottom: 30px;
 }
 
 #logo-booki {
@@ -89,7 +89,7 @@ header {
 }
 
 #nav-menu {
-    display:flex;
+    display: flex;
     flex-direction: row;
     font-size: 16px;
 }
@@ -102,13 +102,13 @@ header {
 
 #nav-menu a:hover {
     border-top: 2px solid var(--main-color);
-    padding-top: 14px;
+    padding-top: 15px;
     color: var(--main-color);
 }
 
 /****** Search and Filters ******/
 .search-and-filters{
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 35px;
 }
@@ -298,38 +298,32 @@ header {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .main-container{
-        padding: 0;                                             /* enlève la marge */
-    }
-
     header {
-        height: auto;                                           /*Ajustement automatique de la hauteur du header*/
-        width: 100%;                                            /*largeur fixée à 100%*/
-        margin-bottom: 15%;                                     /*marge en bas pour espacer le header A REMPLACER PAR le gap*/
-        display: flex;                                          /*Est ce une repétition inutile ?*/
-        flex-direction: column;                                 /*orientation colonne des flexbox*/
-        justify-content: center;                                /* */
-        align-items: center;                                    /* */
+        height : 115px;
+        width: 100%;  
+        margin-bottom: 5%;                    
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;
+        gap: 0px; 
     }
     
     #nav-menu {
-        width: 100%;
-        display:flex;                                           /*disposition flexbox des liens du menu nav*/
-        flex-direction: row;                                    /*orientation ligne des flexbox*/
-        text-align: center;                                     /*centre le texte du menu*/
+        width: 100%;    
+        text-align: center;
     }
     
     #nav-menu a {
         margin: 0;
-        width: 50%;                                             /*Chaque bouton occupera 50% de l'espace disponible*/
-        padding-bottom: 16px;                                   /**/
-        border-bottom: 2px solid #DADADA;                     /*bordure grise sur l'element non selectionné*/                                  
+        width: 50%;
+        padding-bottom: 16px;
+        border-bottom: 2px solid #DADADA;                              
     }
        
     #nav-menu a:hover {
-        border-top : none;                                      /*suppression de la bordure bleue supérieure heritée du mode desktop*/
-        border-bottom: 2px solid var(--main-color);             /*Bordure bleue au passage du pointeur*/   
-        padding-top: 16px;                                      /*compense le décallage lié a l'épaisseur du trait au sur le haut*/
-        padding-bottom: 14px;                                   /*compense le decallage lié a l'épaisseur du trait sur le bas*/
+        border-top : none;                                      
+        border-bottom: 2px solid var(--main-color);             
+        padding-top: 16px;                                      
+        padding-bottom: 14px;                                   
     }
 }
