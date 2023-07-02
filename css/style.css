@@ -264,6 +264,11 @@ header {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    header {
+        gap: 50%; 
+    }
+    
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
