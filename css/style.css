@@ -22,6 +22,10 @@ body {
     width: 100%;
     max-width: 1440px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px; 
 }
 
 main {
@@ -75,6 +79,11 @@ h3 {
     font-size: 16px;
 }
 
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 /****** Header ******/
 header {
     display: flex;                                              
@@ -122,86 +131,109 @@ header {
     display: flex;
     height: 53px;
     flex-direction: column;
-    align-items: flex-start;
     gap: 8px;
+    align-items: flex-start;
     align-self: stretch; 
 }
 
 /** search by city**/
-.fa-location-dot {
-    position: relative;
-    left: 0px;
-    border-radius: 12px 0px 0px 12px;
-    color: black;
-    background-color: var(--main-bg-color);
-    width: 14px;
-    height: 18px;
-    padding : 15.5px 18px 15.5px 18px;
-}
-
-#search-container{
+.search-container {
     display: flex;
     align-items: center;
     height: 49px;
     width: 377px;
+    gap: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--main-bg-color);
+    background: white; 
 }
 
-#input-place{
-    height: 47px;                                                   /*hauteur 49 - 2*1 px de trait*/
-    width: 175px;                                                   /*largeur 195px- 20px de padding*/
-    color: black;
-    font-size: 16px;
+.search-container * {
+    font-size: 18px ;
     font-weight: bold; 
-    border: none;                                                   /*suppresion des ombrages*/                                                       
-    border-top: 1px solid var(--main-bg-color);                     /*trait gris de bordure en haut*/
-    border-bottom: 1px solid var(--main-bg-color);                  /*trait gris de bordure en bas*/
-    padding: 0px 0px 0px 20px;                                      /*positionnement du debut de la saisie*/    
+    border: none;
 }
 
-#desk-search{
-    position: relative;
-    right: 3px;
+.fa-location-dot {
+    color: black;
+    background-color: var(--main-bg-color);
+    flex-shrink: 0;
+    padding : 15.5px 18px 15.5px 18px;
+    border-radius: 12px 0px 0px 12px;
+}
+
+.input-place {
+    height: 47px;
+    width: 147px;
+    color: black;                                                  
+}
+
+.desk-search{
     height: 49px;
     width: 132px;
     color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
     background-color: var(--main-color);
-    border: none;
     border-radius: 0px 12px 12px 0px;
+    padding: 15px 16px; 
     cursor: pointer;
 }
 
-#mobile-search{
+.mobile-search{
     display: none;
 }
 
 /**Filters available*/ 
-#filters-container{
+.filters-container{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     width: 758px;
     height: 50px;
-    gap : 10px;
+    gap : 15px;
 }
-
-#filters-bar{
+.filters-bar {
     display: flex;
-    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
 }
-
 .filter-button{
+    display: flex;
     height: 50px;
     align-items: center;
+    gap: 10px;
+    padding: 4px 19px;
     color: black;
-    font-size: 16px;
-    font-weight: bold; 
+    font-size: 17px;
+    font-weight: bold;
+    background-color: white; 
     border: 2px solid #d9d9d9;
-    border-radius: 25px;
-    padding: 4px 19px 4px 19px;
+    border-radius: 25px;     
+}
+
+.filter-button:hover {
+    background-color: var(--blue-light, #DEEBFF);
     transition: 0.3s;
 }
+
+.info-numbers {
+    display: flex;
+    gap: 10px;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-info {
+    font-size: 10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #d9d9d9;
+    text-align: center;
+    line-height: 24px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
