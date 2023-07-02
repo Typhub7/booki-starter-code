@@ -92,10 +92,11 @@ header {
     display: flex;
     flex-direction: row;
     font-size: 16px;
+    padding: 0px 25px; 
+    gap : 68px;
 }
 
 #nav-menu a {
-    margin: 0px 42.61px 0px 26.39px;
     padding-top: 16px;
     cursor: pointer;
 }
