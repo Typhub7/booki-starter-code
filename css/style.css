@@ -92,6 +92,7 @@ header {
     align-items: flex-start;
     height: 79px;
     border-bottom: 30px;
+    align-self: stretch;
 }
 
 #logo-booki {
@@ -125,6 +126,7 @@ header {
     flex-direction: column;
     align-items: flex-start; 
     gap: 35px;
+    align-self: stretch; 
 }
 
 #main-title-container {
@@ -186,7 +188,7 @@ header {
 .filters-container{
     display: flex;
     align-items: center;
-    width: 758px;
+    width: 100%;
     height: 50px;
     gap : 15px;
 }
@@ -306,9 +308,23 @@ header {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     header {
-        gap: 50%; 
+        gap: 40%; 
     }
-    
+
+    #logo-booki {
+        padding: 30px 50px;
+    }
+  
+    .filters-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 758px;
+        height: 50px;
+        gap : 35px;
+    }
+
 
     .hebergements-and-populaires {
         flex-direction: column;
@@ -346,15 +362,15 @@ header {
 @media (max-width: 767.98px) {
     header {
         height : 115px;
-        width: 100%;  
-        margin-bottom: 5%;                    
+        width: 100%;           
         flex-direction: column;
         justify-content: center;  
         align-items: center;
-        gap: 0px; 
+        gap: 0px;
     }
     
     #nav-menu {
+        gap: 0px;
         width: 100%;    
         text-align: center;
     }
@@ -362,6 +378,7 @@ header {
     #nav-menu a {
         margin: 0;
         width: 50%;
+        padding-top: 0px;
         padding-bottom: 16px;
         border-bottom: 2px solid #DADADA;                              
     }
