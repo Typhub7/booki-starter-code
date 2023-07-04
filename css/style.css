@@ -18,7 +18,7 @@ body {
     justify-content: center;
 }
 
-.main-container {
+.body-container {                                       /****a REPRENDRE ****/
     width: 100%;
     max-width: 1440px;
     box-sizing: border-box;
@@ -30,6 +30,11 @@ body {
 
 main {
     padding: 0 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
 }
 
 .section-title {
@@ -80,6 +85,7 @@ h3 {
 }
 
 p {
+    font-size: 16px;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -255,6 +261,46 @@ header {
     width: 65%;
 }
 
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.hebergements-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -298,6 +344,43 @@ header {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+/****** Hebergements ***********/
+.activites {
+    width: 100%;
+}
+
+.activites-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activites-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.activites-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.activites-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.activites-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
 }
 
 /****************** Footer ******************/
@@ -364,7 +447,8 @@ footer {
         align-items: flex-start;
         width: 758px;
         height: 50px;
-        gap : 35px;
+        margin-top: 15px;
+        gap : 15px;
     }
 
 
