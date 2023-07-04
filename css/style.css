@@ -1,8 +1,4 @@
 /****** General ***********/
-* {
-    font-family: 'Raleway', sans-serif;
-}
-
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -14,6 +10,8 @@
 }
 
 body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
     display: flex;
     justify-content: center;
 }
@@ -94,10 +92,7 @@ p {
 header {
     display: flex;                                              
     justify-content: space-between;
-    gap: 990px; 
     align-items: flex-start;
-    height: 79px;
-    border-bottom: 30px;
     align-self: stretch;
 }
 
@@ -110,8 +105,7 @@ header {
 #nav-menu {
     display: flex;
     flex-direction: row;
-    font-size: 16px;
-    padding: 0px 25px; 
+    padding: 0 25px; 
     gap : 68px;
 }
 
@@ -167,7 +161,7 @@ header {
     background-color: var(--main-bg-color);
     flex-shrink: 0;
     padding : 15.5px 18px 15.5px 18px;
-    border-radius: 12px 0px 0px 12px;
+    border-radius: 12px 0 0 12px;
 }
 
 .input-place {
@@ -181,7 +175,7 @@ header {
     width: 132px;
     color: #ffffff;
     background-color: var(--main-color);
-    border-radius: 0px 12px 12px 0px;
+    border-radius: 0 12px 12px 0;
     padding: 15px 16px; 
     cursor: pointer;
 }
@@ -220,7 +214,7 @@ header {
 }
 
 .filter-button:hover {
-    background-color: var(--blue-light, #DEEBFF);
+    background-color: var(--filter-bg-color);
     transition: 0.3s;
 }
 
@@ -403,7 +397,6 @@ footer {
 }
 
 .footer-menu a:link {
-    font-size: 16px;
     color: black;
     text-decoration: none;
 }
@@ -416,11 +409,11 @@ footer {
     padding : 0;
     margin : 0;
     list-style-type: none;
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 .footer-menu a:hover {
-    color: #0065FC;
+    color: var(--main-color);
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -428,10 +421,6 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    header {
-        gap: 40%; 
-    }
-
     main {
         width: calc(100vw - 100px);
     }
@@ -505,11 +494,10 @@ footer {
         flex-direction: column;
         justify-content: center;  
         align-items: center;
-        gap: 0px;
     }
     
     #nav-menu {
-        gap: 0px;
+        gap: 0;
         width: 100%;    
         text-align: center;
     }
@@ -517,7 +505,7 @@ footer {
     #nav-menu a {
         margin: 0;
         width: 50%;
-        padding-top: 0px;
+        padding-top: 0;
         padding-bottom: 16px;
         border-bottom: 2px solid #DADADA;                              
     }
@@ -525,17 +513,15 @@ footer {
     #nav-menu a:hover {
         border-top : none;                                      
         border-bottom: 2px solid var(--main-color);             
-        padding-top: 16px;                                      
+        /*padding-top: 16px; */                                     
         padding-bottom: 14px;                                   
     }
 
     footer {
         display: flex;
-        margin: 0px;
+        margin: 0;
         flex-direction: column;
         align-items: flex-start;
         align-self: stretch; 
     }
-
-
 }
