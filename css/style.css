@@ -355,28 +355,28 @@ header {
 
 /****** Activites ***********/
 .activites {
-    width: 20%;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    gap: 30px;  
 }
 
 .activites-title {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .activites-cards {
     display: flex;
-    flex-direction: row;
     gap: 30px;
-    justify-content: space-between;
 }
 
-
 .activites-cards .card {
-    width: 100%;
+    margin-top: 33px;
+    height: 439px;
+    width: 14%;
     display: flex;
     flex-direction: column;
-    margin-top: 33px;
+    justify-content: flex-end;
 }
 
 .activites-cards img {
@@ -386,11 +386,7 @@ header {
 }
 
 .activites-cards .card-content {
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+    padding: 20px 19px;
 }
 
 .activites-cards .card-title {
@@ -401,7 +397,7 @@ header {
 /****************** Footer ******************/
 footer {
     margin: 0 50px;
-    width: 100%;
+    width: calc(100% - 100px);
     display: flex;
     justify-content: flex-start;    
     background-color: var(--main-bg-color);
