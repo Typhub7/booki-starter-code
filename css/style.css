@@ -200,7 +200,7 @@ header {
     flex-wrap: wrap;
     gap: 15px;
 }
-.filter-button{
+.filter-button {
     display: flex;
     height: 50px;
     align-items: center;
@@ -214,7 +214,7 @@ header {
     font-family: Raleway;    
 }
 
-.filter-button a:link {
+.filters-bar a:link {
     color: black;
     text-decoration: none;
 }
