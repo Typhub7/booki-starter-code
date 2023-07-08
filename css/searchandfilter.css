@@ -1,0 +1,121 @@
+
+/****** Search and Filters ******/
+.search-and-filters{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 35px;
+}
+
+.main-title-container {
+    display: flex;
+    height: 53px;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/** search by city**/
+.search-container {
+    display: flex;
+    align-items: center;
+    height: 49px;
+    width: 377px;
+    gap: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--main-bg-color);
+    background: white;
+}
+
+.search-container * {
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.fa-location-dot {
+    color: black;
+    background-color: var(--main-bg-color);
+    flex-shrink: 0;
+    padding : 15.5px 18px 15.5px 18px;
+    border-radius: 12px 0 0 12px;
+}
+
+.input-place {
+    height: 47px;
+    width: 147px;
+    color: black;
+    text-align: center;                                                      
+    font-family: Raleway;
+}
+
+.desk-search{
+    height: 49px;
+    width: 132px;
+    color: #ffffff;
+    background-color: var(--main-color);
+    border-radius: 0 12px 12px 0;
+    padding: 15px 16px; 
+    cursor: pointer;
+    font-family: Raleway;    
+}
+
+.mobile-search{
+    display: none;
+}
+
+/**Filters available*/ 
+.filters-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    gap : 15px;
+}
+.filters-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.filter-button {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 19px;
+    background-color: white; 
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Raleway;    
+}
+
+.filters-bar a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.filter-button:hover {
+    background-color: var(--filter-bg-color);
+    transition: 0.3s;
+}
+
+.info-numbers {
+    display: flex;
+    gap: 10px;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-info {
+    font-size: 10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #d9d9d9;
+    text-align: center;
+    line-height: 24px;
+}

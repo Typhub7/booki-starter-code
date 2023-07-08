@@ -1,0 +1,31 @@
+/****** Header ******/
+header {
+    display: flex;                                              
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+#logo-booki {
+    width: 61.09px;
+    height: 19px;
+    padding: 30px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    padding: 0 25px; 
+    gap : 68px;
+}
+
+.nav-menu a {
+    padding-top: 16px;
+    cursor: pointer;
+}
+
+.nav-menu a:hover {
+    border-top: 2px solid var(--main-color);
+    padding-top: 15px;
+    color: var(--main-color);
+}
