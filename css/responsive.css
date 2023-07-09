@@ -61,13 +61,13 @@
         align-items: center;
     }
     
-    #nav-menu {
+    .nav-menu {
         gap: 0;
         width: 100%;    
         text-align: center;
     }
     
-    #nav-menu a {
+    .nav-menu a {
         margin: 0;
         width: 50%;
         padding-top: 0;
@@ -75,11 +75,67 @@
         border-bottom: 2px solid #DADADA;                              
     }
        
-    #nav-menu a:hover {
+    .nav-menu a:hover {
         border-top : none;                                      
-        border-bottom: 2px solid var(--main-color);             
-        /*padding-top: 16px; */                                     
-        padding-bottom: 14px;                                   
+        border-bottom: 2px solid var(--main-color);
+        padding-top: 0;                                
+        padding-bottom: 14px;                               
+    }
+    .search-title-container {
+        height: 79px;
+    }
+
+    .search-container {
+        width: 335px;
+        justify-content: space-between;
+    }
+    .search-and-filters{
+        width: calc(100% - 40px);
+        padding: 0 20px;
+    }
+
+    .input-place {
+        text-align: left;
+        width: 186px;
+    }
+
+    .desk-search{
+        display: none;
+    }
+    
+    .mobile-search{
+        display: block;
+        height: 51px;
+        width: 49px;
+        color: #ffffff;
+        background-color: var(--main-color);
+        border: 1px solid var(--main-color);
+        border-radius: 15px 15px 15px 15px;
+        cursor: pointer;       
+    }
+
+    .location-bluebloc {
+        background-color: var(--main-color);
+        height: 49px;
+        width: 50px;
+        border-radius: 11px 0 0 11px;
+    }
+
+    .fa-magnifying-glass {
+        color : white;
+        position: relative;
+
+    }
+
+    .filters-bar {
+        flex-wrap: wrap;
+        gap: 10px;
+        row-gap : 20px;
+    }
+
+    .filter-button {
+        width : 162.5px;
+        font-size: 14px;
     }
 
     footer {

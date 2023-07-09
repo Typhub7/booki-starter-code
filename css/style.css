@@ -14,7 +14,6 @@ body {
     display: flex;
     width: 100%;
     max-width: 1440px;
-    /*box-sizing: border-box;*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
