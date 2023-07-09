@@ -24,7 +24,7 @@
 }
 
 .hebergements-cards .card {
-    width: 240px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -34,7 +34,7 @@
 .hebergements-cards .cards-row {
     display: flex;
     flex-direction : row;
-    flex-wrap: wrap;
+    gap:30px;
     justify-content: space-between;
     margin-bottom: 30px;
 }

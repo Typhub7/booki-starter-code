@@ -36,8 +36,11 @@
 }
 
 .activites-cards .card-content {
-    width: 100%;
-    padding: 20px 19px;
+    display: flex;
+    align-items: center;
+    height: 14%;
+    padding-left: 19px;
+    padding-right: 19px;
 }
 
 .activites-cards .card-title {

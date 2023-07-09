@@ -26,6 +26,6 @@ header {
 
 .nav-menu a:hover {
     border-top: 2px solid var(--main-color);
-    padding-top: 15px;
+    padding-top: 14px;
     color: var(--main-color);
 }
