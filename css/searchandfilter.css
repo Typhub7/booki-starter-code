@@ -1,6 +1,7 @@
 
 /****** Search and Filters ******/
 .search-and-filters{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
@@ -49,7 +50,7 @@
     height: 47px;
     width: 147px;
     color: black;
-    text-align: center;                                                      
+    text-align: center;                                          
     font-family: Raleway;
 }
 
