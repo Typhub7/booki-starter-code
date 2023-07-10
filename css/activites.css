@@ -28,7 +28,7 @@
 }
 
 .activites-cards img {
-    height: 86%; /*au lieu de 380px*/
+    height: 86%;
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;

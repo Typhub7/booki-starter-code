@@ -8,16 +8,15 @@
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
-    gap: 30px;
     box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
 .hebergements {
     width: 66%;
+    background-color: var(--main-bg-color);
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -73,6 +72,8 @@
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    background-color: var(--main-bg-color);
+    padding: 30px;
 }
 
 .populaires-title {
