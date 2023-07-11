@@ -24,12 +24,12 @@
 .hebergements-cards {
     display: flex;
     flex-direction : row;
-    gap: 30px; /*    justify-content: space-between;*/
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 .hebergements-cards .card {
-    width: 30.6% ;/*250px*/
+    width: 250px;
 }
 
 .hebergements-cards img {
