@@ -1,4 +1,3 @@
-
 /****** Activites ***********/
 .activites {
     width: calc(100% - 60px);
@@ -8,10 +7,6 @@
     gap: 30px; 
 }
 
-.activites-title {
-    display: flex;
-}
-
 .activites-cards {
     display: flex;
     gap: 30px;
@@ -19,12 +14,11 @@
 
 .activites-cards a{
     display: flex;
-    width: 23%;
+    width: 24%;
     height: 439px;
 }
 
 .activites-cards .card {
-    padding: 0;
     display: flex;
     flex-direction: column;
     flex-grow: 1;  
@@ -43,9 +37,4 @@
     height: 14%;
     padding-left: 19px;
     padding-right: 19px;
-}
-
-.activites-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
 }
