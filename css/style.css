@@ -39,7 +39,7 @@ main {
 /* suggestion proposée ajout d'un hover sur les cartes*/
 .hebergements-cards a:hover, .activites-cards a:hover, .populaires-cards .card:hover{
     border-radius: 20px;
-    box-shadow: 5px 5px 10px var(--main-color);
+    box-shadow: 5px 5px 10px gray;
 }
 
 .card img {
