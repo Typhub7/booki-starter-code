@@ -1,9 +1,8 @@
-
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+   /* justify-content: space-between;*/
     gap: 40px; 
 }
 
@@ -28,8 +27,8 @@
     flex-wrap: wrap;
 }
 
-.hebergements-cards .card {
-    width: 250px;
+.hebergements-cards a{
+    width: 30.7%;
 }
 
 .hebergements-cards img {

@@ -18,8 +18,8 @@
 /** search by city**/
 .search-container {
     display: flex;
+    width: 28.2%;
     height: 49px;
-    width: 377px;
     gap: 24px;
     border-radius: 15px;
     border: 1px solid var(--main-bg-color);
@@ -48,7 +48,7 @@
 
 .input-place {
     height: 47px;
-    width: 147px;
+    width: 39.5%;
     color: black;
     text-align: center;                                          
     font-family: Raleway;
@@ -56,7 +56,7 @@
 
 .desk-search{
     height: 51px;
-    width: 134px;
+    width: 35.5%;
     color: #ffffff;
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
