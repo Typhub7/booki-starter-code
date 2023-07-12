@@ -17,20 +17,22 @@
     gap: 30px;
 }
 
-.activites-cards .card {
-    margin-top: 33px;
+.activites-cards a{
+    display: flex;
     width: 23%;
+    height: 439px;
+}
+
+.activites-cards .card {
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    flex-grow: 1
+    flex-grow: 1;  
 }
 
 .activites-cards img {
     height: 86%;
     width: 100%;
-    object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
