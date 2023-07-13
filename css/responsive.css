@@ -96,10 +96,12 @@
     }
     .search-title-container {
         height: 79px;
+        flex: 1;
     }
 
     .search-container {
         width: 100%;
+        min-width: 280px;
         justify-content: space-between;
         gap: 0;
     }
@@ -111,9 +113,9 @@
 
     .input-place {
         position : absolute;
-        left : 94px;
+        left : 28.05%;
         text-align: left;
-        width: 40%;
+        width: 50%;
     }
 
     .desk-search{
@@ -151,6 +153,7 @@
     .filter-button {
         width : 48.48%;
         font-size: 0.875rem;
+        flex : 1;
     }
     .i-circle {
         flex-shrink: 0;
