@@ -28,7 +28,7 @@
 
 .hebergements-cards a{
     width: 30.7%;
-    flex: 1 1 30.7%;
+    flex: 1 1 29%;
 }
 
 .hebergements-cards img {
@@ -46,7 +46,6 @@
     justify-content: space-between;
     box-sizing: border-box;
 }
-
 
 .hebergements-cards .card-title {
     margin-top: 10px;
