@@ -62,7 +62,7 @@
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     main {
-        width: 100vw;  /*375px*/
+        width: 100vw; 
         padding: 0;        
     }
     
@@ -154,6 +154,7 @@
         width : 48.48%;
         font-size: 0.875rem;
         flex : 1;
+        flex-basis: 48%;
     }
     .i-circle {
         flex-shrink: 0;
@@ -176,7 +177,7 @@
 
     .populaires-cards {
         flex-direction: column;
-        margin-top: 0; /*15px*/
+        margin-top: 0;
     }
 
     .populaires-cards .card{
