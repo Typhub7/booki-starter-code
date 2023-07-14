@@ -47,7 +47,7 @@
 
 .hebergements-cards .card-content {
     width: 100%;
-    height: calc(100% - 120px);
+    height: calc(100% - 130px);
     padding: 4px 15px 15px 15px;
     display: flex;
     flex-direction: column;
