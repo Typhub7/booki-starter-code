@@ -101,6 +101,7 @@
 
 .filter-button:hover {
     background-color: var(--filter-bg-color);
+    cursor: pointer;
     transition: 0.3s;
 }
 
